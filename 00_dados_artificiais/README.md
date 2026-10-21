@@ -4,11 +4,12 @@ Geração dos dados sintéticos usados em todo o pipeline. Esses notebooks **sim
 
 ## Notebooks
 
-| # | Notebook | Objetivo |
-|---|---|---|
-| 1 | `01_setup_catalogo_unity_catalog.ipynb` | Cria catálogo, schemas (bronze/silver/gold) e tabelas no Unity Catalog |
-| 2 | `02_geracao_dados_medalhao.ipynb` | Gera dados de crédito sintéticos e os organiza nas camadas Bronze → Silver → Gold |
-| 3 | `03_ingestao_bacen_sgs.ipynb` | **Dados externos:** Consome a API SGS/Bacen — inadimplência, juros e comprometimento de renda das famílias |
+| # | Notebook | Tipo | Objetivo |
+|---|---|---|---|
+| 1 | `01_setup_catalogo_unity_catalog.ipynb` | Dados sintéticos | Cria catálogo, schemas e tabelas no Unity Catalog |
+| 2 | `02_geracao_dados_medalhao.ipynb` | Dados sintéticos | Gera dados de crédito sintéticos (Bronze → Silver → Gold) |
+| 3 | `03_ingestao_bacen_sgs.ipynb` | **Dados externos** | API SGS/Bacen — inadimplência, juros e comprometimento de renda |
+| 4 | `04_ingestao_rfb_cnpj_qsa.ipynb` | **Dados externos** | Receita Federal — CNPJ, QSA (sócios), MEI, capital social e situação cadastral |
 
 ## Séries Ingeridas do Banco Central (SGS)
 
