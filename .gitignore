@@ -1,0 +1,68 @@
+# ============================================================
+# .gitignore — Estudos Databricks
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# MLflow (artefatos locais)
+mlruns/
+mlartifacts/
+
+# Databricks
+.databricks/
+*.dbc
+
+# Dados (não versionar dados brutos ou sensíveis)
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.json.gz
+
+# Credenciais e configs sensíveis
+.env
+.env.*
+secrets.yml
+databricks.cfg
+~/.databrickscfg
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Artefatos de modelo (grandes demais para git)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
